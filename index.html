@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="js/app.js"></script>
-    <title></title>
-  </head>
-  <body>
-Hi
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Overwatch League Team Info</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="teamName" class="primary">Team Name</label>
+        <input type="text" id="teamName" required/>
+      </div>
+      <div class="form-item">
+        <label for="homeCity" class="primary">Home City</label>
+        <input type="text" id="homeCity" required/>
+      </div>
+      <div class="form-item">
+        <label for="league" class="primary">League</label>
+        <select id="league">
+          <option value="" disabled selected></option>
+          <option value="Overwatch League">Overwatch League</option>
+          <option value="Overwatch Contenders">Overwatch Contenders</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="save"/>
+  </form>
+
+  <button id="delete-all">Delete All</button>
+
+  <h1>Team Checklist</h1>
+  <ul id="team-checklist"></ul>
+</body>
 </html>
