@@ -9,33 +9,33 @@ document.addEventListener('DOMContentLoaded', () => {
 const handleNewItemFormSubmit = function (event) {
   event.preventDefault();
 
-  const readingListItem = createReadingListItem(event.target);
-  const readingList = document.querySelector('#team-checklist');
-  readingList.appendChild(readingListItem);
+  const teamChecklisttItem = createTeamChecklisttItem(event.target);
+  const teamChecklist = document.querySelector('#team-checklist');
+  teamChecklist.appendChild(teamChecklisttItem);
 
   event.target.reset();
 }
 
-const createReadingListItem = function (form) {
-  const readingListItem = document.createElement('li');
-  readingListItem.classList.add('team-checklist-item');
+const createTeamChecklisttItem = function (form) {
+  const teamChecklisttItem = document.createElement('li');
+  teamChecklisttItem.classList.add('team-checklist-item');
 
   const teamName = document.createElement('h2');
-  teamName.textContent = form.teamName;
-  readingListItem.appendChild(teamName);
+  teamName.textContent = form.teamName.value;
+  teamChecklisttItem.appendChild(teamName);
 
   const homeCity = document.createElement('h3');
-  homeCity.textContent = form.homeCity;
-  readingListItem.appendChild(homeCity);
+  homeCity.textContent = form.homeCity.value;
+  teamChecklisttItem.appendChild(homeCity);
 
   const league = document.createElement('p');
   league.textContent = form.league.value;
-  readingListItem.appendChild(league);
+  teamChecklisttItem.appendChild(league);
 
-  return readingListItem;
+  return teamChecklisttItem;
 }
 
 const handleDeleteAllClick = function (event) {
-  const readingList = document.querySelector('#team-checklist');
-  readingList.innerHTML = '';
+  const teamChecklist = document.querySelector('#team-checklist');
+  teamChecklist.innerHTML = '';
 }
