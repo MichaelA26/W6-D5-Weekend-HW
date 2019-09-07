@@ -3,6 +3,7 @@ head {
 }
 
 body {
+  background: url('/Users/user/codeclan_work/week_06/day_5/hw/images/overwatch-backgrounds_1660214.png') no-repeat center center fixed;
   font-family: OCR A Std, monospace;
   background-color: white;
 }
