@@ -1,6 +1,10 @@
+head {
+  font-family: OCR A Std, monospace;
+}
+
 body {
-  font-family: Roboto, sans-serif;
-  background-color: #F7F7FF;
+  font-family: OCR A Std, monospace;
+  background-color: white;
 }
 
 ul#list {
@@ -16,14 +20,22 @@ li {
   margin: 0.175em;
   border-radius: 2px;
   background-color: black;
-
-  color: #48ACF0;
+  color: orange;
   border: 1px solid white;
   margin: auto;
 }
 
 
 div.center-contents {
+  text-align: center;
+}
+
+div {
+  display: inline;
+}
+
+input {
+  display: inline;
   text-align: center;
 }
 
@@ -46,4 +58,8 @@ label::after, legend::after {
 
 fieldset {
   border: none;
+}
+
+h1 {
+  text-align: center;
 }
