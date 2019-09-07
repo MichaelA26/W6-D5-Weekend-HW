@@ -42,19 +42,17 @@ input {
 
 form {
   background-color: orange;
-  width: fit-content;
-  padding: 0.5em;
   text-align: center;
-  margin: auto;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #orange;
+  border-radius: 5%;
+  background: #black;
 }
 
 div.form-element {
   padding: 0.25em;
   margin: 0.25em;
-}
-
-label::after, legend::after {
-  content: ':';
 }
 
 fieldset {
@@ -63,4 +61,10 @@ fieldset {
 
 h1 {
   text-align: center;
+}
+
+#team-checklist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
