@@ -43,11 +43,6 @@ input {
 form {
   background-color: orange;
   text-align: center;
-  margin: 0.5rem 0.5rem;
-  padding: 0.5rem 0.8rem;
-  border: 1px solid #orange;
-  border-radius: 5%;
-  background: #black;
 }
 
 div.form-element {
@@ -67,4 +62,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+}
+
+.team-checklist-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: #ddeaff;
 }
